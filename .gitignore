@@ -173,3 +173,11 @@ env.bak/
 venv.bak/
 autotest_result_*_junit.xml
 .python-version
+
+# Local host-only firmware artifacts
+/.venv*/
+/build/
+/build-*/
+/*.log
+/*.log.*
+/.lock-waf_linux_build

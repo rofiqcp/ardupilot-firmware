@@ -74,7 +74,7 @@ float safe_sqrt(const T v)
     // cast before checking so we sqrtf the same value we check
     const float val = static_cast<float>(v);
     // use IEEE-754 compliant function which returns false if val is NaN
-    if (isgreaterequal(val, 0)) {
+    if (std::isgreaterequal(val, 0.0f)) {
         return sqrtf(val);
     }
     return 0;
